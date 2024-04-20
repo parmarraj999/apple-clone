@@ -1,0 +1,151 @@
+.highlight-container{
+    width: 100%;
+    padding: 2rem;
+    background: rgb(28, 28, 28);
+    box-sizing: border-box;
+}
+.highlight-header{
+    padding: 4rem 0;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.highlight-header h1{
+    font-size: 3.2vw;
+    font-weight: bolder;
+    color: grey;
+}
+.header-small-text-container{
+    display: flex;
+    gap: 2em;
+    font-size: 18px;
+    color: royalblue;
+    text-transform: capitalize;
+}
+
+/* ----- video crousel ---  */
+.video-crousel-container{
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 3rem;
+    overflow: scroll;
+    box-sizing: border-box;
+    padding-left: 3rem;
+}
+.video-slider-container{
+    min-width: 1200px;
+    max-width: 800px;
+    height: 90vh;
+    background: black;
+    border-radius: 2rem;
+    position: relative;
+}
+.video-slider-container video{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.video-text{
+    z-index: 10;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+.video-text h1{
+    font-size: 22px;
+}
+
+.highlight-anime-ball-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    margin-top: 5rem;
+}
+.highlight-anime-ball-container .ball-container{
+    width: 60px;
+    height: 60px;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transform: scale(0);
+    display: flex;
+    gap: 1rem;
+}
+.ball-1{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: rgb(107, 107, 107);
+    opacity: 0;
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+    justify-content: center;
+}
+.ball-2{
+    width: 100px;
+    height: 60px;
+    border-radius: 2rem;
+    background: rgb(107, 107, 107);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+}
+.ball-1 .dot{
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+}
+
+
+
+
+@media screen and (max-width:765px) {
+    .highlight-container{
+        padding: .8rem;
+    }
+    .highlight-header{
+        width: 98%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .highlight-header h1{
+        font-size: 32px;
+    }
+    .slider{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .video-slider-container{
+        min-width: 350px;
+        max-width: 350px;
+        height: 350px;
+    }
+    .video-text{
+        top: 12%;
+        left: 6%;
+    }
+    .header-small-text-container{
+        gap: 1rem;
+    }
+}

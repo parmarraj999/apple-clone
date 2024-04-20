@@ -1,0 +1,83 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); */
+@font-face {
+  font-family: sf-pro;
+  src:  url("../public/assets/fonts/sf-pro-icons_light.woff2"),
+        url("../public/assets/fonts/sf-pro-icons_light.woff2")
+         format('woff2')
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  font-family: sf-pro;
+  background: rgb(0, 0, 0);
+}
+.model-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btn-container-model{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.color-btn{
+  background: rgba(128, 128, 128,0.4);
+  padding: .3rem 1rem;
+  height: 50px;
+  border-radius: 2rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: .4rem; */
+}
+.color-btn .color-box{
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+/* .view-box{
+  width: 100%;
+  height: 70vh; 
+} */
+.size-btn{
+  background: rgba(128, 128, 128,0.4);
+  width: 100px;
+  height: 50px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .4rem;
+}
+.size-btn .ball-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  user-select: none;
+  /* background: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+}
+.bg-btn-white{
+  background: white;
+  color: black;
+}

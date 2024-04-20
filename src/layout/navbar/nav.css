@@ -1,0 +1,36 @@
+.nav-container{
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .7rem;
+}
+.nav-logo img{
+    width: 30px;
+}
+.nav-container ul{
+    display: flex;
+    gap: 2.5rem;
+    color: white;
+    list-style: none;
+    font-size: 18px;
+}
+.nav-icons{
+    display: flex;
+    gap:2rem;
+    align-items: center ;
+}
+.nav-icons .nav-icon{
+    font-size: 22px;
+    color: white;
+}
+@media screen and (max-width:765px) {
+    .nav-container{
+        width: 93%;
+    }
+    .nav-container ul{
+        display: none;
+    }
+}
